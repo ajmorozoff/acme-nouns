@@ -1,6 +1,5 @@
 
 const express = require('express');
-const pg = require('pg');
 const path = require('path');
 const {db, seedDB, People, Places, Things} = require('./db.js');
 
