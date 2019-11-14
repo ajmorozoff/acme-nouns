@@ -4,7 +4,7 @@ const pg = require('pg');
 const connectionString = require('./secrets.js')
 pg.defaults.ssl = true;
 
-//const connectionString = 'postgresql://doadmin:z09whncmnh249gtw@amorozoff-db-do-user-5096850-0.db.ondigitalocean.com:25060/nouns';
+
 const db = new Sequelize(connectionString, { logging: false });
 
 const People = db.define('people', {
